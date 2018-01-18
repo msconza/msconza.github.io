@@ -1,21 +1,44 @@
 var sound1 = new Audio('sounds/correct.mp3');
+
+
 var sound2 = new Audio('sounds/wrong.mp3');
+
 var sound3 = new Audio('sounds/win.mp3');
+
 var sound4 = new Audio('sounds/lose.mp3');
+
+
+
+
+
 var score = 0
+
 var i = 1
+
 var ans = 1
+
 function submitAnswer(){
+
    y = document.getElementById("qans").value
+
    var yy=y.toUpperCase();
+
    x = document.getElementById("question").value
+
 if (ans===1){
+
    y = document.getElementById("qans").value
+
    if(yy==="C"){
+
        document.getElementById("question").value="You are right"
+
 	 score++
+
 	document.searchImage.src = "images/homerun.gif"
+
 	sound1.play("correct.mp3");
+
    }
 
    else {
@@ -439,5 +462,8 @@ else {
 	}
 
 	i++;
+
+}
+
 
 }
